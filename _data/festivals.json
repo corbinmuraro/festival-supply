@@ -1,0 +1,27 @@
+[{
+	"title": "Bonnaroo",
+	"date": "June 8–11",
+	"location": "Manchester, TN, USA",
+	"hh-artists": ["Chance the Rapper", "Travis Scott", "Tory Lanez", "Russ", "D.R.A.M.", "Flatbush Zombies", "Aminé", "Noname", "Kaiydo", "Kevin Abstract", "Innanet James"],
+	"electronic-artists": ["Major Lazer", "Flume", "The xx", "Marshmello", "Big Gigantic", "Future Islands", "Crystal Castles", "Yellow Claw", "Louis the Child", "Borgore", "NGHTMRE", "Getter", "Snails", "Illenium", "Claude VonStroke", "G Jones", "Eden", "Ookay", "Herobust", "Goldfish", "San Holo", "REZZ", "Haywyre", "Vanic", "Unlike Pluto", "Nightly", "Ganja White Night"],
+	"rock-artists": ["U2", "Red Hot Chili Peppers", "Cage the Elephant", "Portugal. the Man", "Cold War Kids", "Kaleo", "Royal Blood", "The Strumbellas", "Car Seat Headrest", "The Front Bottoms", "Bad Suns", "Rainbow Kitten Surprise", "Kevin Morby", "Deap Vally", "Hippo Campus", "Ten Fé", "The Orwells", "Mondo Cozmo", "July Talk", "Lucy Dacus", "Klangstof", "The Lemon Twigs", "Wilderado", "Twiddle", "White Reaper", "Lukas Nelson & Promise of The Real", "Welles"],
+	"other-artists": ["The Weeknd", "Lorde", "The Head and the Heart", "Glass Animals", "Tove Lo", "Umphrey's McGee", "Tegan and Sara", "Milky Chance", "Jon Bellion", "Michael Kiwanuka", "Gallant", "Dua Lipa", "James Vincent McMorrow", "Joseph", "Francis & The Lights", "Margo Price", "BadBadNotGood", "Preservation Hall Jazz Band", "Greensky Bluegrass", "Cam", "Coin", "Mandolin Orange", "Leon", "Albin Lee Meldau", "Angélique Kidjo", "Luke Combs", "Stick Figure", "Goody Grace", "Khruangbin", "Turkuaz", "Twin Limb", "Big Jesus", "River Whyless", "Alexandra Savior", "Aaron Lee Tasjan"]
+},
+{
+	"title": "Lollapalooza",
+	"date": "August 3–6",
+	"location": "Chicago, IL, USA",
+	"hh-artists": [],
+	"electronic-artists": [],
+	"rock-artists": [],
+	"other-artists": []
+},
+{
+	"title": "Outside Lands",
+	"date": "August 11–13",
+	"location": "San Francisco, CA, USA",
+	"hh-artists": ["A Tribe Called Quest", "Schoolboy Q", "Action Bronson", "Dr. Octagon", "Noname", "Kamaiyah", "Sam Dew"],
+	"electronic-artists": ["Gorillaz", "Above & Beyond", "Empire Of The Sun", "Little Dragon", "Kaytranada", "Louis The Child", "Bomba Estéreo", "RAC", "How to Dress Well", "Sohn", "Goldroom", "S U R V I V E", "Porches", "MUNA", "Oliver Tree"],
+	"rock-artists": ["Metallica", "The Who", "Queens Of The Stone Age", "Young the Giant", "Royal Blood", "Dawes", "Warpaint", "Real Estate", "Temples", "Hamilton Leithauser", "Foxygen", "Electric Guest", "Hundred Waters", "San Fermin", "Mon Laferte", "The Lemon Twigs", "Mondo Cozmo"],
+	"other-artists": ["Lorde", "Alt-J", "Fleet Foxes", "The Avett Brothers", "Belle and Sebastian", "Solange", "Future Islands", "Rebelution", "Vance Joy", "Bleachers", "Tove Lo", "Sleigh Bells", "Shovels & Rope", "Thundercat", "Rag’n’Bone Man", "James Vincent McMorrow", "K.Flay", "Maggie Rogers", "Sofi Tukker", "Khruangbin", "Kali Uchis", "Joseph", "The Japanese House", "Lee Fields & The Expressions", "Grace Mitchell", "Jacob Banks", "John Moreland", "FRENSHIP", "Lawrence", "The She’s"]
+}]

@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+}
+
+.nav {
+	position: relative;
+	height: 74px;
+	background: #000;
+}
+
+	.logo {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 24px;
+	}
+
+	.description {
+		padding-top: 28px;
+		text-align: center;
+		color: #fff;
+		font-family: Courier;
+		font-size: 14px;
+	}
+
+	.search {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 24px;
+	}
+
+section {
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 52px;
+}
+
+	.title {
+		font-family: TiemposHeadline-Light;
+		font-size: 32px;
+		color: #000000;
+	}
+
+	.date, .location {
+		font-family: BebasNeueRegular;
+		font-size: 16px;
+		color: #000000;
+		letter-spacing: 0.8px;
+		display: inline;
+		padding-right: 8px;
+	}
+
+	.artists-container {
+		/* FIX COLLAPSING PARENT */
+		display: inline-block;
+    	width: 100%;
+    	padding-top: 24px;
+	}
+
+		.artists {
+			width: 20%;
+			padding-right: 5%;
+			float: left;
+		}
+
+			.artists .heading {
+				font-family: Calibre-Regular;
+				font-size: 16px;
+				color: #000000;
+			}
+
+			.artists ul {
+				font-family: CourierNewPSMT;
+				font-size: 16px;
+				color: #000000;
+				padding: 0;
+			}
+			
+				.artists ul li {
+					margin: 0.5em 0;
+					list-style-type: none;
+				}
+
+				.artists ul li:nth-child(n+9) {  
+					display: none
+				}
+
+	.toggle {
+		font-family: Calibre-Regular;
+		font-size: 16px;
+		color: #000000;
+		cursor: pointer;
+	}
+
+	hr {
+		width: 100%;
+	}

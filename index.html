@@ -10,11 +10,15 @@ title: Testing
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 </head>
 <body>
 	<div class="nav">
 		<a href=".">
-			<div class="logo">
+			<div id="logo">
 				<svg width="22px" height="30px" viewBox="0 0 22 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
 				    <desc>Created with Sketch.</desc>
@@ -33,9 +37,10 @@ title: Testing
 			</div>
 		</a>
 
-		<div class="description">Find your perfect music festival</div>
+		<div id="description">Find your perfect music festival</div>
 		
-		<div class="search">
+		<input class="searchfield" type="text" placeholder="Search...">
+		<div id="searchbutton">
 			<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
 			    <desc>Created with Sketch.</desc>
@@ -62,22 +67,6 @@ title: Testing
 				<div class="location">{{ festival.location }}</div>
 				<div class="artists-container">
 					<div class="artists col1">
-						<p class="heading">Hip-Hop</p>
-						<ul class="list hh-artists">
-							{% for artist in festival.hh-artists %}
-								<li>{{artist}}</li>
-							{% endfor %}
-						</ul>
-					</div>
-					<div class="artists col2">
-						<p class="heading">Electronic</p>
-						<ul class="list electronic-artists">
-							{% for artist in festival.electronic-artists %}
-								<li>{{artist}}</li>
-							{% endfor %}
-						</ul>
-					</div>
-					<div class="artists col3">
 						<p class="heading">Rock</p>
 						<ul class="list rock-artists">
 							{% for artist in festival.rock-artists %}
@@ -85,7 +74,23 @@ title: Testing
 							{% endfor %}
 						</ul>
 					</div>
+					<div class="artists col2">
+						<p class="heading">Hip-Hop</p>
+						<ul class="list hh-artists">
+							{% for artist in festival.hh-artists %}
+								<li>{{artist}}</li>
+							{% endfor %}
+						</ul>
+					</div>
 					<div class="artists col3">
+						<p class="heading">Electronic</p>
+						<ul class="list electronic-artists">
+							{% for artist in festival.electronic-artists %}
+								<li>{{artist}}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="artists col4">
 						<p class="heading">Everything Else</p>
 						<ul class="list other-artists">
 							{% for artist in festival.other-artists %}
@@ -98,11 +103,11 @@ title: Testing
 			</section>
 			<hr>
 		{% endfor %}
-
-
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/lunr/lunr.min.js"></script>
+	<script src="js/search.js"></script>
 </body>
 </html>

@@ -1,5 +1,9 @@
-body {
-	margin: 0;
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .nav {
@@ -8,14 +12,14 @@ body {
 	background: #000;
 }
 
-	.logo {
+	#logo {
 		position: absolute;
 		left: 0;
 		top: 0;
-		padding: 24px;
+		padding: 20px 24px;
 	}
 
-	.description {
+	#description {
 		padding-top: 28px;
 		text-align: center;
 		color: #fff;
@@ -23,12 +27,56 @@ body {
 		font-size: 14px;
 	}
 
-	.search {
+	.searchfield {
+		position: absolute;
+		right: -2px;
+		top: 0;
+		height: 74px;
+		box-sizing: border-box;
+		width: 0px;
+		font-size: 16px;
+		font-family: Courier;
+		background: #fff;
+		border: none;
+		padding: 0px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
+		.searchfield:focus{
+	   		outline: none;
+		}	
+
+		.opened-searchfield {
+			padding: 16px;
+			right: 0;
+		}
+
+		.widened-searchfield {
+			width: 300px;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+
+	#searchbutton {
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding: 24px;
+		padding: 24px 24px 24px 8px;
+		cursor: pointer;
 	}
+
+		.dark-searchbutton path, .dark-searchbutton ellipse {
+			stroke: #000;
+		    -webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
 
 section {
 	max-width: 850px;
@@ -43,8 +91,9 @@ section {
 	}
 
 	.date, .location {
-		font-family: BebasNeueRegular;
-		font-size: 16px;
+		font-family: "Oswald";
+		text-transform: uppercase;
+		font-size: 14px;
 		color: #000000;
 		letter-spacing: 0.8px;
 		display: inline;

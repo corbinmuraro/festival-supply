@@ -23,7 +23,7 @@ html,body {
 		padding-top: 28px;
 		text-align: center;
 		color: #fff;
-		font-family: Courier;
+		font-family: 'Cutive Mono', 'Courier', monospace;
 		font-size: 14px;
 	}
 
@@ -35,7 +35,7 @@ html,body {
 		box-sizing: border-box;
 		width: 0px;
 		font-size: 16px;
-		font-family: Courier;
+		font-family: 'Cutive Mono', 'Courier', monospace;
 		background: #fff;
 		border: none;
 		padding: 0px;
@@ -50,7 +50,7 @@ html,body {
 		}	
 
 		.opened-searchfield {
-			padding: 16px;
+			padding: 16px 62px 16px 16px;
 			right: 0;
 		}
 
@@ -104,7 +104,7 @@ section {
 		/* FIX COLLAPSING PARENT */
 		display: inline-block;
     	width: 100%;
-    	padding-top: 24px;
+    	padding-top: 16px;
 	}
 
 		.artists {
@@ -120,7 +120,7 @@ section {
 			}
 
 			.artists ul {
-				font-family: CourierNewPSMT;
+				font-family: 'Cutive Mono', 'Courier', monospace;
 				font-size: 16px;
 				color: #000000;
 				padding: 0;

@@ -2,6 +2,7 @@ $(function() {
 
 });
 
+// expand section on Show More click
 $('.toggle').click(function() {
     var toggle = $(this);
     var section = toggle.parent();
@@ -18,7 +19,7 @@ $('.toggle').click(function() {
     }
 });
 
-
+// toggle searchfield on SEARCH icon click
 $('#searchbutton').click(function(e) {
     e.preventDefault(); 
     $('#searchbutton').toggleClass('dark-searchbutton');
@@ -27,5 +28,16 @@ $('#searchbutton').click(function(e) {
     setTimeout(function() {
         $('.searchfield').focus();
     },200);
+});
 
+// close searchfield on ESC keyup
+$(document).keyup(function(e) {
+     if (e.keyCode == 27) { 
+        if ($('.searchfield').is(":focus")) {
+            $('#searchbutton').toggleClass('dark-searchbutton');
+            $('.searchfield').toggleClass('opened-searchfield');
+            $('.searchfield').toggleClass('widened-searchfield');
+            $('.searchfield').blur();
+        }
+    }
 });

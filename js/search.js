@@ -1,59 +1,54 @@
-function getQueryVariable(variable) {
-  var query = window.location.search.substring(1);
-  var vars = query.split('&');
+---
+---
 
-  for (var i = 0; i < vars.length; i++) {
-    var pair = vars[i].split('=');
+$(function() {
+	// grab festival json data from jekyll
+	var data = {{site.data.festivals | jsonify}};
+	console.log(data);
 
-    if (pair[0] === variable) {
-      return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-    }
-  }
-}
+	// initialize lunr
+	var idx = lunr(function () {
+		this.field('id');
+		this.field('title', { boost: 3 });
+		this.field('date');
+		this.field('location');
+		this.field('rockArtists', { boost: 3 });
+		this.field('hhArtists', { boost: 3 });
+		this.field('electronicArtists', { boost: 3 });
+		this.field('otherArtists', { boost: 3 });
 
-var searchTerm = "Chance";
+		// add festivals to lunr
+		for (var key in data) {
+			this.add({
+				'id': key,
+				'title': data[key].title,
+				'date': data[key].date,
+				'location': data[key].location,
+				'rockArtists': data[key]['rock-artists'],
+				'hhArtists': data[key]['hh-artists'],
+				'electronicArtists': data[key]['electronic-artists'],
+				'otherArtists': data[key]['other-artists']
+			});
+		}
+	});
 
-if (searchTerm) {
-	// $("#searchfield").val(searchTerm);
+  $('#searchform').on('submit', function(e) {
+    e.preventDefault();
+    var query = $(".searchfield").val();
+    console.log(query);
 
-  // Initalize lunr with the fields it will be searching on. I've given title
-  // a boost of 10 to indicate matches on this field are more important.
-  var idx = lunr(function () {
-    this.field('id');
-    this.field('title', { boost: 10 });
-    this.field('author');
-    this.field('category');
-    this.field('content');
+    var results = idx.search(query); // Get lunr to perform a search
+		displaySearchResults(results, data); // We'll write this in the next section
   });
+});
 
-  for (var key in window.store) { // Add the data to lunr
-    idx.add({
-      'id': key,
-      'title': window.store[key].title,
-      'author': window.store[key].author,
-      'category': window.store[key].category,
-      'content': window.store[key].content
-    });
 
-    var results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, window.store); // We'll write this in the next section
-  }
-}
 
 function displaySearchResults(results, store) {
-  var searchResults = document.getElementById('search-results');
-
-  if (results.length) { // Are there any results?
-    var appendString = '';
-
-    for (var i = 0; i < results.length; i++) {  // Iterate over the results
-      var item = store[results[i].ref];
-      appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-      appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
-    }
-
-    searchResults.innerHTML = appendString;
-  } else {
-    searchResults.innerHTML = '<li>No results found</li>';
-  }
+	if (results.length) { // Are there any results?
+		for (var i = 0; i < results.length; i++) {  // Iterate over the results
+			var item = store[results[i].ref];
+			console.log(item.title);
+		}
+	}
 }

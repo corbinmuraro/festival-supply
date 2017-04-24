@@ -3,7 +3,7 @@ $(function() {
 });
 
 // expand section on Show More click
-$('.toggle').click(function() {
+$("section").on("click", ".toggle", function(){
     var toggle = $(this);
     var section = toggle.parent();
 
@@ -34,10 +34,17 @@ $('#searchbutton').click(function(e) {
 $(document).keyup(function(e) {
      if (e.keyCode == 27) { 
         if ($('.searchfield').is(":focus")) {
-            $('#searchbutton').toggleClass('dark-searchbutton');
-            $('.searchfield').toggleClass('opened-searchfield');
-            $('.searchfield').toggleClass('widened-searchfield');
+            $('#searchbutton').removeClass('dark-searchbutton');
+            $('.searchfield').removeClass('opened-searchfield');
+            $('.searchfield').removeClass('widened-searchfield');
             $('.searchfield').blur();
         }
     }
+});
+
+// close searchfield on deselect
+$(".searchfield").blur(function() {
+    $('#searchbutton').removeClass('dark-searchbutton');
+    $('.searchfield').removeClass('opened-searchfield');
+    $('.searchfield').removeClass('widened-searchfield');
 });

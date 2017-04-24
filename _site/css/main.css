@@ -49,11 +49,13 @@ html,body {
 	   		outline: none;
 		}	
 
+		/* instantly activated properties */
 		.opened-searchfield {
 			padding: 16px 62px 16px 16px;
 			right: 0;
 		}
 
+		/* animated properties */
 		.widened-searchfield {
 			width: 300px;
 			-webkit-transition: all 0.3s ease;
@@ -69,7 +71,7 @@ html,body {
 		padding: 24px 24px 24px 8px;
 		cursor: pointer;
 	}
-
+		/* animates the icon to change from whit -> black */
 		.dark-searchbutton path, .dark-searchbutton ellipse {
 			stroke: #000;
 		    -webkit-transition: all 0.5s ease;

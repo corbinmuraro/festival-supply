@@ -15,8 +15,17 @@
 	"rock-artists": ["Weezer", "Band of Horses", "Young the Giant", "Franz Ferdinand", "Local Natives", "Warpaint", "The Strumbellas", "Andrew McMahon in the Wilderness", "Mutemath", "Bishop Briggs", "Rainbow Kitten Surprise", "Strand of Oaks", "Mondo Cozmo", "Le Youth", "888", "The Heydaze", "SUSTO", "White Reaper", "The Worn Flints"],
 	"hh-artists": ["Chance the Rapper", "Migos", "Tory Lanez", "A$AP Ferg", "Lil Yachty", "DJ Jazzy Jeff", "Russ", "Towkio", "Pardison Fontaine", "Tkay Maidza"],
 	"electronic-artists": ["Major Lazer", "DJ Snake", "Sigur Ros", "Marshmello", "Dillon Francis", "Charli XCX", "Cash Cash", "Louis the Child", "NGHTMRE", "TCHAMI", "Snakehips", "Cherub", "Gryffin", "Matoma", "Cheat Codes", "Kungs", "Bob Moses", "ARIZONA", "Nora En Pure", "Shaun Frank", "Brasstracks", "Elephante", "Jillionaire", "Kap Slap", "CVBZ", "MISSIO", "Foreign Air", "BASSH", "DJ Hashim"],
-	"other-artists": ["Mumford & Sons", "Twenty One Pilots", "Frank Ocean", "MGMT", "The Head and the Heart", "Lukas Graham", "Mac DeMarco", "Rufus Du Sol", "Shaggy", "MAGIC!", "LANY", "PVRIS", "Lewis Del Mar", "Hurray for the Riff Raff", "Joseph", "LP", "Joshua James", "Cobi", "Barns Courtney", "Coin", "Fletcher", "Frances", "The Suffers", "Lawrence", "The New Respects", "Jimmy Lumpkin & the Revival", "NAWAS"]
+	"other-artists": ["Mumford & Sons", "Twenty One Pilots", "Frank Ocean", "MGMT", "The Head and the Heart", "Lukas Graham", "Mac DeMarco", "Rufus du Sol", "Shaggy", "MAGIC!", "LANY", "PVRIS", "Lewis Del Mar", "Hurray for the Riff Raff", "Joseph", "LP", "Joshua James", "Cobi", "Barns Courtney", "Coin", "Fletcher", "Frances", "The Suffers", "Lawrence", "The New Respects", "Jimmy Lumpkin & the Revival", "NAWAS"]
 
+},
+{
+	"title": "Sasquatch! Music Festival",
+	"date": "May 26–28",
+	"location": "George, WA, USA",
+	"rock-artists": ["The Shins", "Thee Oh Sees", "Car Seat Headrest", "Foxygen", "Catfish and the Bottlemen", "The Strumbellas", "American Football", "The Hotelier", "Mondo Cozmo", "White Lung", "Rainbow Kitten Surprise", "Arkells", "July Talk", "Klangstof", "Los Colognes", "Kyle Craft", "Sloucher"],
+	"hh-artists": ["Chance the Rapper", "Mac Miller", "Aesop Rock", "Big Freedia", "Kaiydo", "Boogie", "Joey Purp", "Porter Ray", "DoNormaal"],
+	"electronic-artists": ["Bonobo", "Kaytranada", "Big Gigantic", "Bomba Estereo", "Bob Moses", "Mount Kimbie", "Jagwar Ma", "Fakear", "Manatee Commune", "Kungs", "IHF", "Katie Kate"],
+	"other-artists": ["Frank Ocean", "Twenty One Pilots", "The Head and the Heart", "MGMT", "Phantogram", "Rufus du Sol", "Sleigh Bells", "Bleachers", "Kiiara", "Charles Bradley and his Extraordinaires", "Vulfpeck", "Benjamin Clementine", "Chicago Batman", "Moses Sumney", "The Radio Dept.", "Cigarettes After Sex", "SALES", "Corey Harper", "Flint Eastwood", "Reuben and the Dark", "Hoops", "Courtney Marie Andrews", "Gazebos", "Saint Mesa", "SISTERS", "Sasheer Zamata", "Fred Armisen", "Beth Stelling", "Sal Vulcano", "Nate Bargatze", "Sam Morril", "Yogi Paliwal", "Alice Wetterlund", "Emmett Montgomery"] 
 },
 {
 	"title": "Governors Ball Music Festival",
@@ -25,7 +34,7 @@
 	"rock-artists": ["Tool", "Cage the Elephant", "Royal Blood", "Franz Ferdinand", "Warpaint", "Parquet Courts", "Local Natives", "The Strumbellas", "Car Seat Headrest", "The Orwells", "Lo Moon", "Mondo Cozmo", "Welles", "Ron Gallo", "VANT"],
 	"hh-artists": ["Chance the Rapper", "Childish Gambino", "Wu-Tang Clan", "Wiz Khalifa", "Logic", "Schoolboy Q", "Danny Brown", "Rae Sremmund", "A$AP Ferg", "Skepta", "YG", "Stormzy", "SAINt JHN", "Kaiydo", "Tkay Maidza"],
 	"electronic-artists": ["Phoenix", "Flume", "Beach House", "Mark Ronson Vs. Kevin Parker", "Marshmello", "Air", "The Avalanches", "Gryffin", "Charli XCX", "Zane Lowe", "Eden", "MUNA", "The Range", "ARIZONA", "Jenaux"],
-	"other-artists": ["Lorde", "Phantogram", "Bleachers", "The Head and the Heart", "Mac DeMarco", "Charles Bradley and His Extraordinaires", "Banks", "Tove Lo", "Majid Jordan", "Kehlani", "Rufus Du Sol", "Michael Kiwanuka", "Saint Motel", "Francis & the Lights", "Judah & the Lion", "Roosevelt", "Michael Blume", "Dua Lipa", "Barns Courtney", "Blossoms", "Jessie Reyez", "Jack Martini"]
+	"other-artists": ["Lorde", "Phantogram", "Bleachers", "The Head and the Heart", "Mac DeMarco", "Charles Bradley and his Extraordinaires", "Banks", "Tove Lo", "Majid Jordan", "Kehlani", "Rufus du Sol", "Michael Kiwanuka", "Saint Motel", "Francis & the Lights", "Judah & the Lion", "Roosevelt", "Michael Blume", "Dua Lipa", "Barns Courtney", "Blossoms", "Jessie Reyez", "Jack Martini"]
 
 },
 {
@@ -51,9 +60,9 @@
 	"date": "July 21–23",
 	"location": "Los Angeles, CA, USA",
 	"rock-artists": ["Nine Inch Nails", "Iggy Pop", "Slowdive", "King Krule", "Blonde Redhead", "Grandaddy", "Ty Segall", "The Faint", "Beach Fossils", "Temples", "Thee Oh Sees", "Jonathan Richman", "Whitney", "Hundred Waters", "Mitski", "Royal Headache", "Cherry Glazerr", "Big Thief"],
-	"hh-artists": ["Missy Elliott", "A Tribe Called Quest", "Run the Jewels", "Sleep", "Noname", "Joey Purp", "Kamaiyah", "Princess Nokia", "Nadia Rose", "Kirk Knight"],
+	"hh-artists": ["Missy Elliott", "A Tribe Called Quest", "Run the Jewels", "Sleep", "Noname", "Joey Purp", "6lack", "Kamaiyah", "Princess Nokia", "Nadia Rose", "Kirk Knight"],
 	"electronic-artists": ["Flying Lotus", "Nicolas Jaar", "Little Dragon", "Mura Masa", "The Black Madonna", "Motor City Drum Ensemble", "John Talabot", "Arca", "DJ Harvey", "TR/ST", "Tiga", "Talaboman", "Omar-S", "Daniel Avery", "SURVIVE", "Horse Meat Disco", "Fatima Yamaha", "Helena Hauff", "Avalon Emerson", "Paranoid London", "Young Marco"],
-	"other-artists": ["Bjork", "Frank Ocean", "Erykah Badu", "Solange", "Anderson .Paak", "MGMT", "Hannibal Buress", "Angel Olsen", "Kehlani", "Majid Jordan", "6lack", "Thundercat", "The Drums", "Seun Kuti & Egypt 80", "Cap'n Jazz", "BadBadNotGood", "Perfume Genius", "Moses Sumney", "Andy Shauf", "Julia Jacklin"]
+	"other-artists": ["Bjork", "Frank Ocean", "Erykah Badu", "Solange", "Anderson .Paak", "MGMT", "Hannibal Buress", "Angel Olsen", "Kehlani", "Majid Jordan", "Thundercat", "The Drums", "Seun Kuti & Egypt 80", "Cap'n Jazz", "BadBadNotGood", "Perfume Genius", "Moses Sumney", "Andy Shauf", "Julia Jacklin"]
 
 },
 {
@@ -61,9 +70,9 @@
 	"date": "August 3–6",
 	"location": "Chicago, IL, USA",
 	"rock-artists": ["The Killers", "Muse", "Arcade Fire", "Blink-182", "Cage the Elephant", "The Shins", "Ryan Adams", "Liam Gallagher", "Spoon", "Grouplove", "Kaleo", "Live", "Whitney",  "Royal Blood", "Andrew McMahon in the Wilderness", "Car Seat Headrest", "The Pretty Reckless", "Warpaint", "Highly Suspect", "Cloud Nothings", "CRX", "Temples", "Bishop Briggs", "The Districts", "San Fermin", "Pup", "Hippo Campus", "Kevin Devine", "The Lemon Twigs", "The Shelters", "VANT", "Middle Kids", "The Hunna", "Mondo Cozmo", "Blaenavon", "Lo Moon", "Declan McKenna", "Ron Gallo", "Atlas Genius", "The London Souls", "888", "Slothrust", "Colony House", "Jesse Malin", "Lady Pills"],
-	"hh-artists": ["Chance the Rapper", "Run the Jewels", "Wiz Khalifa", "Big Sean", "Rae Sremmund", "Migos", "Lil Uzi Vert", "Russ", "21 Savage", "Lil Yachty", "Noname", "Joey Bada$$", "Machine Gun Kelly", "Jidenna", "NF", "$uicideboy$", "Amine", "Michael Christmas", "SAINt JHN", "MadeinTYO", "Boogie", "Duckwrth", "Kweku Collins"], 
+	"hh-artists": ["Chance the Rapper", "Run the Jewels", "Wiz Khalifa", "Big Sean", "Rae Sremmund", "Migos", "Lil Uzi Vert", "Russ", "21 Savage", "Lil Yachty", "Noname", "Joey Bada$$", "Machine Gun Kelly", "Jidenna", "NF", "$uicideboy$", "Amine", "6lack", "Michael Christmas", "SAINt JHN", "MadeinTYO", "Boogie", "Duckwrth", "Kweku Collins"], 
 	"electronic-artists": ["The xx", "DJ Snake", "Justice", "Kaskade", "Porter Robinson", "Zeds Dead", "Gramatik", "Crystal Castles", "Little Dragon", "DVBBS", "3LAU", "Borgore", "Alison Wonderland", "Kaytranada", "Charli XCX", "SLANDER", "Getter", "NGHTMRE", "Baauer",  "Slushii", "A-Trak", "Tritonal", "Sampha", "Jai Wolf", "Ephwurd", "Mura Masa", "Gryffin", "Joyryde", "G Jones", "Ookay", "Honne", "Cheat Codes", "Paper Diamond", "San Holo", "Dirty Audio", "Unlike Pluto", "Whetan", "Young Bombs", "MISSIO", "ARIZONA", "Moksi", "Wingtip", "Wax Motif", "Pham", "Elohim"],
-	"other-artists": ["Lorde", "Alt-J", "The Head and the Heart", "Foster the People", "Glass Animals", "Phantogram", "Tove Lo", "Milky Chance", "Vance Joy", "Tegan and Sara", "Jon Bellion", "Mac DeMarco", "Banks", "George Ezra", "Sylvan Esso", "Capital Cities", "London Grammar", "Rag’n’Bone Man", "Majid Jordan", "Zara Larsson", "The Drums", "6lack", "Alvvays", "Maggie Rogers", "Joseph", "Moose Blood", "The Japanese House", "Leon", "Skott", "Blossoms", "Jacob Banks", "Barns Courtney", "Oliver Tree", "Jain", "Grace Mitchell", "The O'My's", "Flint Eastwood", "The Frights", "Bibi Bourelly", "Sofi Tukker", "Xavier Omar", "Cobi", "Gibbz", "Michael Blume", "Stanaj", "The Walters", "Allan Rayman", "FRENSHIP", "Spencer Ludwig", "FLOR", "Harriet Brown", "Brayton Bowman", "Goody Grace", "MAX", "Tucker Beathard", "Tim Kubart and the Space Cadets", "Lucky Diaz", "Q Brothers", "Sleepy Man", "JoJo and the Pinecones", "Lard Dog & the Band of Shy", "Little Miss Ann", "School of Rock All Stars"]
+	"other-artists": ["Lorde", "Alt-J", "The Head and the Heart", "Foster the People", "Glass Animals", "Phantogram", "Tove Lo", "Milky Chance", "Vance Joy", "Tegan and Sara", "Jon Bellion", "Mac DeMarco", "Banks", "George Ezra", "Sylvan Esso", "Capital Cities", "London Grammar", "Rag’n’Bone Man", "Majid Jordan", "Zara Larsson", "The Drums", "Alvvays", "Maggie Rogers", "Joseph", "Moose Blood", "The Japanese House", "Leon", "Skott", "Blossoms", "Jacob Banks", "Barns Courtney", "Oliver Tree", "Jain", "Grace Mitchell", "The O'My's", "Flint Eastwood", "The Frights", "Bibi Bourelly", "Sofi Tukker", "Xavier Omar", "Cobi", "Gibbz", "Michael Blume", "Stanaj", "The Walters", "Allan Rayman", "FRENSHIP", "Spencer Ludwig", "FLOR", "Harriet Brown", "Brayton Bowman", "Goody Grace", "MAX", "Tucker Beathard", "Tim Kubart and the Space Cadets", "Lucky Diaz", "Q Brothers", "Sleepy Man", "JoJo and the Pinecones", "Lard Dog & the Band of Shy", "Little Miss Ann", "School of Rock All Stars"]
 },
 {
 	"title": "Outside Lands",
@@ -74,3 +83,10 @@
 	"electronic-artists": ["Gorillaz", "Above & Beyond", "Empire Of The Sun", "Little Dragon", "Kaytranada", "Louis The Child", "Bomba Estereo", "RAC", "How to Dress Well", "Sohn", "Goldroom", "SURVIVE", "Porches", "MUNA", "Oliver Tree"],
 	"other-artists": ["Lorde", "Alt-J", "Fleet Foxes", "The Avett Brothers", "Belle and Sebastian", "Solange", "Future Islands", "Rebelution", "Vance Joy", "Bleachers", "Tove Lo", "Sleigh Bells", "Shovels & Rope", "Thundercat", "Rag’n’Bone Man", "James Vincent McMorrow", "K.Flay", "Maggie Rogers", "Sofi Tukker", "Khruangbin", "Kali Uchis", "Joseph", "The Japanese House", "Lee Fields & The Expressions", "Grace Mitchell", "Jacob Banks", "John Moreland", "FRENSHIP", "Lawrence", "The She’s"]
 }]
+
+
+
+
+
+
+

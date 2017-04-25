@@ -54,10 +54,10 @@ function displaySearchResults(results, store) {
 
 
 			var rockList, hhList, electronicList, otherList;
-			rockList = "<li></li>";
-			hhList = "<li></li>";
-			electronicList = "<li></li>";
-			otherList = "<li></li>";
+			rockList = "";
+			hhList = "";
+			electronicList = "";
+			otherList = "";
 
 			item['rock-artists'].forEach(function(artist) {
 				rockList += "<li>" + artist + "</li>";

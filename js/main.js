@@ -3,7 +3,7 @@ $(function() {
 });
 
 // expand section on Show More click
-$("section").on("click", ".toggle", function(){
+$("body").on("click", ".toggle", function(){
     var toggle = $(this);
     var section = toggle.parent();
 

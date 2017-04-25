@@ -80,6 +80,19 @@ html,body {
 			transition: all 0.5s ease;
 		}
 
+.summary-wrapper {
+	text-align: center;
+}
+
+	.summary {
+		background: #c3bbff;
+		padding: 6.5px;
+		font-family: Calibre-Regular;
+		margin-top: 16px;
+		box-shadow: 8px 0 0 #c3bbff, -8px 0 0 #c3bbff;
+		display: inline-block;
+	}
+
 section {
 	max-width: 850px;
 	margin: 0 auto;
@@ -147,3 +160,23 @@ section {
 	hr {
 		width: 100%;
 	}
+
+.footer {
+
+}
+
+@media (max-width: 400px) {
+	#description {
+		display: none;
+	}
+}
+
+/* TODO: 2 artist lists per line, then 1 per line on mobile(?) */
+/* TODO: full width search bar */
+/* TODO: fade out / display:none on description to prevent clipping? */
+/*@media (max-width: 600px) { 
+	.artists {
+		width: 40%;
+		padding-right: 5%;
+	}
+}*/

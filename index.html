@@ -60,13 +60,16 @@
 			</div>
 		</form>
 	</div>
+ 
+	<!--<div class="summary-wrapper">
+		<div class="summary">There were <span id="numresults">3</span> festivals matching your search</div>
+	</div> -->
 
 	<div class="content">
 		{% for festival in site.data.festivals %}
 			<section>
 				<div class="title">{{ festival.title }}</div>
-				<div class="date">{{ festival.date }}</div>
-				<div class="location">{{ festival.location }}</div>
+				<div class="date">{{ festival.date }}</div><div class="location">{{ festival.location }}</div>
 				<div class="artists-container">
 					<div class="artists col1">
 						<p class="heading">Rock</p>

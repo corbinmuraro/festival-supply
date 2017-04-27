@@ -57,7 +57,7 @@ html,body {
 
 		/* animated properties */
 		.widened-searchfield {
-			width: 300px;
+			width: 100%;
 			-webkit-transition: all 0.3s ease;
 			-moz-transition: all 0.3s ease;
 			-o-transition: all 0.3s ease;
@@ -71,7 +71,7 @@ html,body {
 		padding: 24px 24px 24px 8px;
 		cursor: pointer;
 	}
-		/* animates the icon to change from whit -> black */
+		/* animates the icon to change from white -> black */
 		.dark-searchbutton path, .dark-searchbutton ellipse {
 			stroke: #000;
 		    -webkit-transition: all 0.5s ease;
@@ -82,15 +82,22 @@ html,body {
 
 .summary-wrapper {
 	text-align: center;
+	display: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
 }
 
 	.summary {
-		background: #c3bbff;
 		padding: 6.5px;
-		font-family: Calibre-Regular;
+		
 		margin-top: 16px;
-		box-shadow: 8px 0 0 #c3bbff, -8px 0 0 #c3bbff;
 		display: inline-block;
+	}
+
+	.reset {
+		display: inline-block;
+		text-decoration: underline;
+		cursor: pointer;
 	}
 
 section {
@@ -98,10 +105,21 @@ section {
 	margin: 0 auto;
 	padding: 52px;
 }
+	
+	section a {
+		display: inline-block;
+		color: #000;
+		text-decoration: none;
+	}
+
+	section a:hover {
+		text-decoration: underline;
+	}
 
 	.title {
-		font-family: TiemposHeadline-Light;
-		font-size: 32px;
+		display: block;
+		font-family: 'Playfair Display';
+		font-size: 30px;
 		color: #000000;
 	}
 
@@ -116,7 +134,6 @@ section {
 	}
 
 	.artists-container {
-		/* FIX COLLAPSING PARENT */
 		display: inline-block;
     	width: 100%;
     	padding-top: 16px;
@@ -129,8 +146,8 @@ section {
 		}
 
 			.artists .heading {
-				font-family: Calibre-Regular;
-				font-size: 16px;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
 				color: #000000;
 			}
 
@@ -150,9 +167,13 @@ section {
 					display: none
 				}
 
+				.artists ul li span.highlight {
+					font-weight: bold;
+				}
+
 	.toggle {
-		font-family: Calibre-Regular;
-		font-size: 16px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13px;
 		color: #000000;
 		cursor: pointer;
 	}
@@ -161,22 +182,15 @@ section {
 		width: 100%;
 	}
 
+
 .footer {
 
 }
 
-@media (max-width: 400px) {
-	#description {
-		display: none;
-	}
-}
-
 /* TODO: 2 artist lists per line, then 1 per line on mobile(?) */
-/* TODO: full width search bar */
-/* TODO: fade out / display:none on description to prevent clipping? */
-/*@media (max-width: 600px) { 
+@media (max-width: 600px) { 
 	.artists {
 		width: 40%;
-		padding-right: 5%;
+		padding-right: 10%;
 	}
-}*/
+}

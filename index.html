@@ -13,7 +13,8 @@
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <body>
 	<div class="nav">
@@ -61,14 +62,15 @@
 		</form>
 	</div>
  
-	<!--<div class="summary-wrapper">
-		<div class="summary">There were <span id="numresults">3</span> festivals matching your search</div>
-	</div> -->
+	<div class="summary-wrapper">
+		<div class="summary"><span id="numresults">0</span> festival<span id="results-plural">s</span> matched your search.</div>
+		<div class="reset">Reset</div>
+	</div>
 
 	<div class="content">
 		{% for festival in site.data.festivals %}
 			<section>
-				<div class="title">{{ festival.title }}</div>
+				<div class="title"><a href="{{festival.url}}">{{ festival.title }}</a></div>
 				<div class="date">{{ festival.date }}</div><div class="location">{{ festival.location }}</div>
 				<div class="artists-container">
 					<div class="artists col1">
@@ -104,9 +106,12 @@
 						</ul>
 					</div>
 				</div>
-				<div class="toggle">+ Show more</div>
+				<div class="toggle">+ Show More</div>
 			</section>
-			<hr>
+			{% if forloop.last %}
+			{% else %}
+			    <hr>
+			{% endif %}
 		{% endfor %}
 	</div>
 
@@ -119,6 +124,8 @@
 
 	<!-- search-related -->
 	<script src="js/lunr.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.9.0/jquery.mark.min.js"></script>
+	<!-- <script src="js/chosen.jquery.min.js"></script> -->
 	<script src="js/search.js"></script>
 </body>
 </html>

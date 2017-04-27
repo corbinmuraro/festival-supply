@@ -1,7 +1,3 @@
-$(function() {
-
-});
-
 // expand section on Show More click
 $("body").on("click", ".toggle", function(){
     var toggle = $(this);
@@ -19,32 +15,14 @@ $("body").on("click", ".toggle", function(){
     }
 });
 
-// toggle searchfield on SEARCH icon click
-$('#searchbutton').click(function(e) {
-    e.preventDefault(); 
-    $('#searchbutton').toggleClass('dark-searchbutton');
-    $('.searchfield').toggleClass('opened-searchfield');
-    $('.searchfield').toggleClass('widened-searchfield');
-    setTimeout(function() {
-        $('.searchfield').focus();
-    },200);
-});
-
-// close searchfield on ESC keyup
-$(document).keyup(function(e) {
-     if (e.keyCode == 27) { 
-        if ($('.searchfield').is(":focus")) {
-            $('#searchbutton').removeClass('dark-searchbutton');
-            $('.searchfield').removeClass('opened-searchfield');
-            $('.searchfield').removeClass('widened-searchfield');
-            $('.searchfield').blur();
-        }
-    }
-});
-
-// close searchfield on deselect
-$(".searchfield").blur(function() {
-    $('#searchbutton').removeClass('dark-searchbutton');
-    $('.searchfield').removeClass('opened-searchfield');
-    $('.searchfield').removeClass('widened-searchfield');
-});
+// ,
+// {
+//     "title": "Bumbershoot",
+//     "url": "https://www.bumbershoot.com",
+//     "date": "Sept 1–3",
+//     "location": "Seattle, WA, USA",
+//     "rock-artists": [
+//     "hh-artists": [
+//     "electronic-artists": ["Flume", "ODESZA", 
+//     "other-artists": ["Lorde", 
+// }

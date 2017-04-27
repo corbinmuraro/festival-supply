@@ -1,11 +1,92 @@
 ---
 ---
 
-// grab festival json data from jekyll
-var data = {{site.data.festivals | jsonify}};
-console.log(data);
+var open = false; // tracks searchbar status
 
-// initialize lunr
+// Form submit --> search
+$('#searchform').submit(function(e) {
+	e.preventDefault();
+	search();
+});
+
+// Search button click
+// If open and text --> search
+// If open without text --> close
+// If closed --> open
+$('#searchbutton').mousedown(function(e) {
+	e.preventDefault();
+	if (open) {
+		if ($(".searchfield").val() !== "") {
+			search();
+		}
+		else {
+			$('#searchbutton').removeClass('dark-searchbutton');
+		    $('.searchfield').removeClass('opened-searchfield');
+		    $('.searchfield').removeClass('widened-searchfield');
+		    $('.searchfield').blur();
+		    open = false;
+		}
+	}
+	else {
+		$('#searchbutton').addClass('dark-searchbutton');
+	    $('.searchfield').addClass('opened-searchfield');
+	    $('.searchfield').addClass('widened-searchfield');
+	    setTimeout(function() {
+	        $('.searchfield').focus();
+	    },200);
+	    open = true;
+	}
+});
+
+// If ESC press and open --> close
+// If TAB and closed --> open
+$(document).keyup(function(e) {
+     if (e.keyCode == 27) { 
+        if (open) {
+            $('#searchbutton').removeClass('dark-searchbutton');
+            $('.searchfield').removeClass('opened-searchfield');
+            $('.searchfield').removeClass('widened-searchfield');
+            $('.searchfield').blur();
+            open = false;
+        }
+    }
+  //   else if (e.keyCode == 9) {
+		// if (!open) {
+		// 	$('#searchbutton').addClass('dark-searchbutton');
+		//     $('.searchfield').addClass('opened-searchfield');
+		//     $('.searchfield').addClass('widened-searchfield');
+		//     setTimeout(function() {
+		//         $('.searchfield').focus();
+		//     },200);
+		//     open = true;
+		// }
+  //   }
+});
+
+// On deselect --> close
+$(".searchfield").blur(function() {
+    $('#searchbutton').removeClass('dark-searchbutton');
+    $('.searchfield').removeClass('opened-searchfield');
+    $('.searchfield').removeClass('widened-searchfield');
+    open = false;
+});
+
+
+
+// Show all results when "Show all" clicked
+$('.reset').click(function() {
+	displaySearchResults("", data, data);
+});
+
+
+
+
+/* SEARCH FUNCTIONALITY */
+
+// Grab festival JSON data from jekyll
+var data = {{site.data.festivals | jsonify}};
+
+// Build lunr with JSON data
 var idx = lunr(function () {
 	this.field('id');
 	this.field('title', { boost: 3 });
@@ -31,27 +112,48 @@ var idx = lunr(function () {
 	}
 });
 
-$('#searchform').on('submit', function(e) {
-  e.preventDefault();
-  var query = $(".searchfield").val();
-  console.log(query);
 
-  var results = idx.search(query); // Get lunr to perform a search
-	displaySearchResults(results, data); // We'll write this in the next section
-});
+// Determines the query in searchfield
+// Uses lunr to grab results object
+// Calls displaySearchResults to update DOM
+function search() {
+	var query = $(".searchfield").val();
+	if (query == "") {
+		displaySearchResults("", data, data);
+	}
+	else {
+		var results = idx.search(query);
+		displaySearchResults(query, results, data);
+	}
+}
 
-function displaySearchResults(results, store) {
-	console.log(results);
-	if (results.length) { // Are there any results?
-		$('.content').empty(); // clear out current results
+// Clears content field
+// Displays and updates results summary
+// Replaces content field with search results
+function displaySearchResults(query, results, data) {
+	$('.content').empty();
+	
+	// Hides OR shows and sets results summary
+	if (query == "") {
+		$('.summary-wrapper').hide();
+	}
+	else {
+		$('.summary-wrapper').show();
+		$('#numresults').text(results.length);
+		if (results.length > 1) {
+			$('#results-plural').text('s');
+		}
+		else {
+			$('#results-plural').text('');
+		}
+	}
 
-		for (var i = 0; i < results.length; i++) {  // Iterate over the results
-			var item = store[results[i].ref];
-			console.log(item['rock-artists']);
-			console.log(item['hh-artists']);
-			console.log(item['electronic-artists']);
-			console.log(item['other-artists']);
-
+	if (results.length) {
+		for (var i = 0; i < results.length; i++) {
+			if (query == "")
+				item = data[i]; // used when showing all results
+			else
+				item = data[results[i].ref]; // used when showing lunr results
 
 			var rockList, hhList, electronicList, otherList;
 			rockList = "";
@@ -73,14 +175,14 @@ function displaySearchResults(results, store) {
 			});
 
 			var container = '<section></section>'
-			var title = '<div class="title">' + item.title + '</div>';
+			var title = '<div class="title"><a href="' + item.url + '">' + item.title + '</a></div>';
 			var date = '<div class="date">' + item.date + '</div>';
 			var location = '<div class="location">' + item.location + '</div>';
 			var artistGroup = '<div class="artists-container"><div class="artists col1"><p class="heading">Rock</p><ul class="list rock-artists">'
 			+ rockList + '</ul></div><div class="artists col2"><p class="heading">Hip-Hop</p><ul class="list hh-artists">'
 			+ hhList + '</ul></div><div class="artists col3"><p class="heading">Electronic</p><ul class="list electronic-artists">'
 			+ electronicList + '</ul></div><div class="artists col4"><p class="heading">Everything Else</p><ul class="list other-artists">' 
-			+ otherList + '</ul></div></div><div class="toggle">+ Show more</div>';
+			+ otherList + '</ul></div></div><div class="toggle">+ Show More</div>';
 
 			if (i != results.length-1) {
 				var container = '<section>' + title + date + location + artistGroup + '</section><hr>';
@@ -92,6 +194,14 @@ function displaySearchResults(results, store) {
 			}
 		}
 	}
+
+	// Use mark.js to add span.higlight around search terms
+	$(".artists-container").mark(query, {
+	    "element": "span",
+	    "className": "highlight",
+	    "accuracy": "exactly"
+	});
 }
+
 
 

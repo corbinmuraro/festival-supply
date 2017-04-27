@@ -1,6 +1,7 @@
 [
 {
 	"title": "Rolling Loud",
+	"url": "http://rollingloud.com",
 	"date": "May 5–7",
 	"location": "Miami, FL, USA",
 	"rock-artists": [],
@@ -10,6 +11,7 @@
 },
 {
 	"title": "Hangout Music Fest",
+	"url": "http://hangoutmusicfest.com",
 	"date": "May 19–21",
 	"location": "Gulf Shores, AL, USA",
 	"rock-artists": ["Weezer", "Band of Horses", "Young the Giant", "Franz Ferdinand", "Local Natives", "Warpaint", "The Strumbellas", "Andrew McMahon in the Wilderness", "Mutemath", "Bishop Briggs", "Rainbow Kitten Surprise", "Strand of Oaks", "Mondo Cozmo", "Le Youth", "888", "The Heydaze", "SUSTO", "White Reaper", "The Worn Flints"],
@@ -20,6 +22,7 @@
 },
 {
 	"title": "Sasquatch! Music Festival",
+	"url": "http://sasquatchfestival.com",
 	"date": "May 26–28",
 	"location": "George, WA, USA",
 	"rock-artists": ["The Shins", "Thee Oh Sees", "Car Seat Headrest", "Foxygen", "Catfish and the Bottlemen", "The Strumbellas", "American Football", "The Hotelier", "Mondo Cozmo", "White Lung", "Rainbow Kitten Surprise", "Arkells", "July Talk", "Klangstof", "Los Colognes", "Kyle Craft", "Sloucher"],
@@ -29,6 +32,7 @@
 },
 {
 	"title": "Governors Ball Music Festival",
+	"url": "http://governorsballmusicfestival.com",
 	"date": "June 2–4",
 	"location": "New York City, NY, USA",
 	"rock-artists": ["Tool", "Cage the Elephant", "Royal Blood", "Franz Ferdinand", "Warpaint", "Parquet Courts", "Local Natives", "The Strumbellas", "Car Seat Headrest", "The Orwells", "Lo Moon", "Mondo Cozmo", "Welles", "Ron Gallo", "VANT"],
@@ -39,6 +43,7 @@
 },
 {
 	"title": "Bonnaroo",
+	"url": "http://bonnaroo.com",
 	"date": "June 8–11",
 	"location": "Manchester, TN, USA",
 	"rock-artists": ["U2", "Red Hot Chili Peppers", "Cage the Elephant", "Portugal. the Man", "Cold War Kids", "Kaleo", "Royal Blood", "The Strumbellas", "Car Seat Headrest", "The Front Bottoms", "Bad Suns", "Rainbow Kitten Surprise", "Kevin Morby", "Deap Vally", "Hippo Campus", "Ten Fé", "The Orwells", "Mondo Cozmo", "July Talk", "Lucy Dacus", "Klangstof", "The Lemon Twigs", "Wilderado", "Twiddle", "White Reaper", "Lukas Nelson & Promise of The Real", "Welles"],
@@ -48,6 +53,7 @@
 },
 {
 	"title": "Firefly Music Festival",
+	"url": "http://fireflyfestival.com",
 	"date": "June 15-18",
 	"location": "Dover, DE, USA",
 	"rock-artists": ["Muse", "Bob Dylan", "Weezer", "The Shins", "Thirty Seconds to Mars", "Franz Ferdinand", "AFI", "Ok Go", "Kaleo", "O.A.R.", "The Strumbellas", "Bishop Briggs", "Hamilton Leithauser", "Rainbow Kitten Surprise", "Sunflower Bean", "888", "Dreamers", "Andy Frasco & The U.N.", "Mondo Cozmo", "Wilderado", "Klangstof"],
@@ -57,6 +63,7 @@
 },
 {
 	"title": "FYF Fest",
+	"url": "http://fyffest.com",
 	"date": "July 21–23",
 	"location": "Los Angeles, CA, USA",
 	"rock-artists": ["Nine Inch Nails", "Iggy Pop", "Slowdive", "King Krule", "Blonde Redhead", "Grandaddy", "Ty Segall", "The Faint", "Beach Fossils", "Temples", "Thee Oh Sees", "Jonathan Richman", "Whitney", "Hundred Waters", "Mitski", "Royal Headache", "Cherry Glazerr", "Big Thief"],
@@ -67,6 +74,7 @@
 },
 {
 	"title": "Lollapalooza",
+	"url": "http://lollapalooza.com",
 	"date": "August 3–6",
 	"location": "Chicago, IL, USA",
 	"rock-artists": ["The Killers", "Muse", "Arcade Fire", "Blink-182", "Cage the Elephant", "The Shins", "Ryan Adams", "Liam Gallagher", "Spoon", "Grouplove", "Kaleo", "Live", "Whitney",  "Royal Blood", "Andrew McMahon in the Wilderness", "Car Seat Headrest", "The Pretty Reckless", "Warpaint", "Highly Suspect", "Cloud Nothings", "CRX", "Temples", "Bishop Briggs", "The Districts", "San Fermin", "Pup", "Hippo Campus", "Kevin Devine", "The Lemon Twigs", "The Shelters", "VANT", "Middle Kids", "The Hunna", "Mondo Cozmo", "Blaenavon", "Lo Moon", "Declan McKenna", "Ron Gallo", "Atlas Genius", "The London Souls", "888", "Slothrust", "Colony House", "Jesse Malin", "Lady Pills"],
@@ -76,6 +84,7 @@
 },
 {
 	"title": "Outside Lands",
+	"url": "http://sfoutsidelands.com",
 	"date": "August 11–13",
 	"location": "San Francisco, CA, USA",
 	"rock-artists": ["Metallica", "The Who", "Queens Of The Stone Age", "Young the Giant", "Royal Blood", "Dawes", "Warpaint", "Real Estate", "Temples", "Hamilton Leithauser", "Foxygen", "Electric Guest", "Hundred Waters", "San Fermin", "Mon Laferte", "The Lemon Twigs", "Mondo Cozmo"],

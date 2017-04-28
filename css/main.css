@@ -3,7 +3,6 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 .nav {
@@ -20,6 +19,16 @@ html,body {
 	}
 
 	#description {
+		display: block;
+		padding-top: 28px;
+		text-align: center;
+		color: #fff;
+		font-family: 'Cutive Mono', 'Courier', monospace;
+		font-size: 14px;
+	}
+
+	#description-short {
+		display: none;
 		padding-top: 28px;
 		text-align: center;
 		color: #fff;
@@ -38,6 +47,7 @@ html,body {
 		font-family: 'Cutive Mono', 'Courier', monospace;
 		background: #fff;
 		border: none;
+		border-radius: 0px;
 		padding: 0px;
 		-webkit-transition: all 0.3s ease;
 		-moz-transition: all 0.3s ease;
@@ -143,6 +153,7 @@ section {
 			width: 20%;
 			padding-right: 5%;
 			float: left;
+			vertical-align: top;
 		}
 
 			.artists .heading {
@@ -180,6 +191,8 @@ section {
 
 	hr {
 		width: 100%;
+		border-left: 0;
+		border-right: 0;
 	}
 
 
@@ -187,10 +200,25 @@ section {
 
 }
 
+
 /* TODO: 2 artist lists per line, then 1 per line on mobile(?) */
 @media (max-width: 600px) { 
 	.artists {
 		width: 40%;
 		padding-right: 10%;
+	}
+}
+
+@media (max-width: 400px) {
+	#description {
+		display: none;
+	}
+
+	#description-short {
+		display: block;
+	}
+
+	section {
+		padding: 32px;
 	}
 }

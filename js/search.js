@@ -13,7 +13,7 @@ $('#searchform').submit(function(e) {
 // If open and text --> search
 // If open without text --> close
 // If closed --> open
-$('#searchbutton').mousedown(function(e) {
+$('#searchbutton').on('click', function(e) {
 	e.preventDefault();
 	if (open) {
 		if ($(".searchfield").val() !== "") {
@@ -33,10 +33,18 @@ $('#searchbutton').mousedown(function(e) {
 	    $('.searchfield').addClass('widened-searchfield');
 	    setTimeout(function() {
 	        $('.searchfield').focus();
-	    },200);
+	        $('.searchfield').trigger('touchstart'); // trigger touchstart
+	    },100);
 	    open = true;
 	}
 });
+
+$('.searchfield').on('touchstart', function () {
+    $(this).select();   // inside this function the focus works
+});
+
+
+
 
 // If ESC press and open --> close
 // If TAB and closed --> open
@@ -70,8 +78,6 @@ $(".searchfield").blur(function() {
     $('.searchfield').removeClass('widened-searchfield');
     open = false;
 });
-
-
 
 // Show all results when "Show all" clicked
 $('.reset').click(function() {
@@ -140,11 +146,11 @@ function displaySearchResults(query, results, data) {
 	else {
 		$('.summary-wrapper').show();
 		$('#numresults').text(results.length);
-		if (results.length > 1) {
-			$('#results-plural').text('s');
+		if (results.length == 1) {
+			$('#results-plural').text('');
 		}
 		else {
-			$('#results-plural').text('');
+			$('#results-plural').text('s');
 		}
 	}
 

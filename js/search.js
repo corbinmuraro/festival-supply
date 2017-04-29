@@ -13,70 +13,49 @@ $('#searchform').submit(function(e) {
 // If open and text --> search
 // If open without text --> close
 // If closed --> open
-$('#searchbutton').on('click', function(e) {
+$('#searchbutton').click(function(e) {
 	e.preventDefault();
 	if (open) {
 		if ($(".searchfield").val() !== "") {
 			search();
 		}
 		else {
-			$('#searchbutton').removeClass('dark-searchbutton');
-		    $('.searchfield').removeClass('opened-searchfield');
-		    $('.searchfield').removeClass('widened-searchfield');
-		    $('.searchfield').blur();
-		    open = false;
+			closeSearchBar();
 		}
 	}
 	else {
-		$('#searchbutton').addClass('dark-searchbutton');
-	    $('.searchfield').addClass('opened-searchfield');
-	    $('.searchfield').addClass('widened-searchfield');
-	    setTimeout(function() {
-	        $('.searchfield').focus();
-	        $('.searchfield').trigger('touchstart'); // trigger touchstart
-	    },100);
-	    open = true;
+		openSearchBar();
 	}
 });
 
 $('.searchfield').on('touchstart', function () {
-    $(this).select();   // inside this function the focus works
+    $(this).select();
 });
-
-
-
 
 // If ESC press and open --> close
 // If TAB and closed --> open
 $(document).keyup(function(e) {
-     if (e.keyCode == 27) { 
+    if (e.keyCode == 27) { 
+     	e.preventDefault();
         if (open) {
-            $('#searchbutton').removeClass('dark-searchbutton');
-            $('.searchfield').removeClass('opened-searchfield');
-            $('.searchfield').removeClass('widened-searchfield');
-            $('.searchfield').blur();
-            open = false;
+            closeSearchBar();
         }
     }
-  //   else if (e.keyCode == 9) {
-		// if (!open) {
-		// 	$('#searchbutton').addClass('dark-searchbutton');
-		//     $('.searchfield').addClass('opened-searchfield');
-		//     $('.searchfield').addClass('widened-searchfield');
-		//     setTimeout(function() {
-		//         $('.searchfield').focus();
-		//     },200);
-		//     open = true;
-		// }
-  //   }
+    else if (e.keyCode == 9) {
+    	e.preventDefault();
+		if (open) {
+			closeSearchBar();
+		}
+		else {
+			openSearchBar();
+		}
+    }
 });
 
 // On deselect --> close
-$(".searchfield").blur(function() {
-    $('#searchbutton').removeClass('dark-searchbutton');
-    $('.searchfield').removeClass('opened-searchfield');
-    $('.searchfield').removeClass('widened-searchfield');
-    open = false;
+$(".content").click(function(e) {	
+	e.preventDefault();
+	closeSearchBar();
 });
 
 // Show all results when "Show all" clicked
@@ -84,6 +63,23 @@ $('.reset').click(function() {
 	displaySearchResults("", data, data);
 });
 
+
+function openSearchBar() {
+	$('#searchbutton').addClass('dark-searchbutton');
+    $('.searchfield').addClass('opened-searchfield');
+    $('.searchfield').addClass('widened-searchfield');
+    setTimeout(function() {
+        $('.searchfield').focus();
+    },200);
+    open = true;
+}
+
+function closeSearchBar() {
+    $('#searchbutton').removeClass('dark-searchbutton');
+    $('.searchfield').removeClass('opened-searchfield');
+    $('.searchfield').removeClass('widened-searchfield');
+    open = false;	
+}
 
 
 

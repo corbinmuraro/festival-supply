@@ -14,15 +14,3 @@ $("body").on("click", ".toggle", function(){
         toggle.addClass('expanded');
     }
 });
-
-// ,
-// {
-//     "title": "Bumbershoot",
-//     "url": "https://www.bumbershoot.com",
-//     "date": "Sept 1–3",
-//     "location": "Seattle, WA, USA",
-//     "rock-artists": [
-//     "hh-artists": [
-//     "electronic-artists": ["Flume", "ODESZA", 
-//     "other-artists": ["Lorde", 
-// }

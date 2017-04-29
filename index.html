@@ -71,14 +71,17 @@
 				<div class="title"><a href="{{festival.url}}">{{ festival.title }}</a></div>
 				<div class="date">{{ festival.date }}</div><div class="location">{{ festival.location }}</div>
 				<div class="artists-container">
-					<div class="artists col1">
-						<p class="heading">Rock</p>
-						<ul class="list rock-artists">
-							{% for artist in festival.rock-artists %}
-								<li>{{artist}}</li>
-							{% endfor %}
-						</ul>
-					</div>
+					{% if festival.rock-artists.size > 0 %}
+						<div class="artists col1">
+							<p class="heading">Rock</p>
+							<ul class="list rock-artists">
+								{% for artist in festival.rock-artists %}
+									<li>{{artist}}</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endif %}
+					{% if festival.hh-artists.size > 0 %}
 					<div class="artists col2">
 						<p class="heading">Hip-Hop</p>
 						<ul class="list hh-artists">
@@ -87,6 +90,8 @@
 							{% endfor %}
 						</ul>
 					</div>
+					{% endif %}
+					{% if festival.electronic-artists.size > 0 %}
 					<div class="artists col3">
 						<p class="heading">Electronic</p>
 						<ul class="list electronic-artists">
@@ -95,6 +100,8 @@
 							{% endfor %}
 						</ul>
 					</div>
+					{% endif %}
+					{% if festival.other-artists.size > 0 %}
 					<div class="artists col4">
 						<p class="heading">Everything Else</p>
 						<ul class="list other-artists">
@@ -103,6 +110,7 @@
 							{% endfor %}
 						</ul>
 					</div>
+					{% endif %}
 				</div>
 				<div class="toggle">+ Show More</div>
 			</section>

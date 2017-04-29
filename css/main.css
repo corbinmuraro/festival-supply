@@ -209,7 +209,7 @@ section {
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.artists {
 		width: 100%;
 		padding-right: 0;

@@ -180,11 +180,17 @@ function displaySearchResults(query, results, data) {
 			var title = '<div class="title"><a href="' + item.url + '">' + item.title + '</a></div>';
 			var date = '<div class="date">' + item.date + '</div>';
 			var location = '<div class="location">' + item.location + '</div>';
-			var artistGroup = '<div class="artists-container"><div class="artists col1"><p class="heading">Rock</p><ul class="list rock-artists">'
-			+ rockList + '</ul></div><div class="artists col2"><p class="heading">Hip-Hop</p><ul class="list hh-artists">'
-			+ hhList + '</ul></div><div class="artists col3"><p class="heading">Electronic</p><ul class="list electronic-artists">'
-			+ electronicList + '</ul></div><div class="artists col4"><p class="heading">Everything Else</p><ul class="list other-artists">' 
-			+ otherList + '</ul></div></div><div class="toggle">+ Show More</div>';
+			var artistGroup = '<div class="artists-container">';
+
+			if (rockList !== "")
+				artistGroup += '<div class="artists col1"><p class="heading">Rock</p><ul class="list rock-artists">' + rockList + '</ul></div>';
+			if (hhList !== "")
+				artistGroup += '<div class="artists col2"><p class="heading">Hip-Hop</p><ul class="list hh-artists">' + hhList + '</ul></div>';
+			if (electronicList !== "")
+				artistGroup += '<div class="artists col3"><p class="heading">Electronic</p><ul class="list electronic-artists">' + electronicList + '</ul></div>';
+			if (otherList !== "")
+				artistGroup += '<div class="artists col4"><p class="heading">Everything Else</p><ul class="list other-artists">' + otherList + '</ul></div>'
+			artistGroup += '</div><div class="toggle">+ Show More</div>';
 
 			if (i != results.length-1) {
 				var container = '<section>' + title + date + location + artistGroup + '</section><hr>';

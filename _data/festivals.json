@@ -1,15 +1,4 @@
-[
-{
-	"title": "Rolling Loud",
-	"url": "http://rollingloud.com",
-	"date": "May 5–7",
-	"location": "Miami, FL, USA",
-	"rock-artists": [],
-	"hh-artists": ["Kendrick Lamar", "A$AP Rocky", "Mac Miller", "Future", "Run the Jewels", "Travis Scott", "Young Thug", "Migos", "Joey Bada$$", "Chief Keef", "Kevin Gates", "Action Bronson", "Curren$y", "Post Malone", "Lil Uzi Vert", "Lil Yachty", "Flatbush Zombies", "Blackbear", "Kodak Black", "21 Savage", "Denzel Curry", "The Underachievers", "Amine", "Mick Jenkins", "Rob $tone", "Playboi Carti", "Jazz Cartier", "Azizi Gibson", "Robb Bank$", "Nebu Kiniza", "Rich Chigga", "XXXTentacion", "Chaz French", "Trill Sammy", "Kembe X", "Jay IDK", "Topaz Jones", "wifisfuneral", "SAINt JHN", "Larry June", "Zoey Dollaz", "Bobo Swae", "SesHolloWaterBoyz", "Eearz", "Malcolm Anthony", "Polly A", "A. Chal", "indigochildrick", "Impxct", "Uma Jolie"],
-	"electronic-artists": [],
-	"other-artists": []
-},
-{
+[{
 	"title": "Hangout Music Fest",
 	"url": "http://hangoutmusicfest.com",
 	"date": "May 19–21",
@@ -95,11 +84,31 @@
 {
     "title": "Bumbershoot",
     "url": "https://www.bumbershoot.com",
-    "date": "Sept 1–3",
+    "date": "September 1–3",
     "location": "Seattle, WA, USA",
     "rock-artists": ["Weezer", "Spoon", "Kaleo", "Highly Suspect", "PVRIS", "Tacocat", "Filthy Friends", "Middle Kids", "Dreamers"],
     "hh-artists": ["Big Sean", "Die Antwoord", "The Roots", "Gucci Mane", "Flo Rida", "Vince Staples", "Lil Yachty", "E-40", "Watsky", "Amine", "Taylor Bennett", "Kevin Abstract"],
     "electronic-artists": ["Flume", "ODESZA", "Dillon Francis", "Jauz", "Louis the Child", "Cash Cash", "Big Wild", "BROODS", "Lany", "Slushii", "Honne", "Ekali", "Whethan"],
     "other-artists": ["Lorde", "HAIM", "Solange", "X Ambassadors", "Conor Oberst", "Cody Jinks", "ZZ Ward", "Red Fang", "Zara Larsson", "Jorja Smith", "Joseph", "Chicano Batman", "Lucie Silvas", "Leon", "Sofi Tukker", "Johnnyswim", "Lillie Mae", "Cataldo", "Dude York", "Smokey Brights", "Daniel Caesar", "Shook Twins", "The Maldives"]
+},
+{
+	"title": "Life is Beautiful",
+	"url": "https://lifeisbeautiful.com",
+	"date": "September 22–24",
+	"location": "Las Vegas, CA, USA",
+   "rock-artists": ["Muse", "Blink-182", "Cage the Elephant", "Slightly Stoopid", "Local Natives", "PVRIS", "Hippo Campus", "Mondo Cozmo", "Middle Kids", "Circa Waves", "San Fermin", "The American Weather"],
+    "hh-artists": ["Chance the Rapper", "Wiz Khalifa", "2 Chainz", "Schoolboy Q", "De La Soul", "Pusha T", "Lil Dicky", "Vince Staples", "Russ"],
+    "electronic-artists": ["Kaskade", "The xx", "Pretty Lights", "ZHU", "Zeds Dead", "Tycho", "TCHAMI", "Matoma", "Big Gigantic", "TroyBoi", "Mura Masa", "Deorro", "RAC", "Kiesza", "BROODS", "Goldroom", "Big Wild", "Ekali", "Tokimonsta", "Hayden James", "Tennyson", "Whethan", "SG Lewis", "Viceroy", "Wingtip", "Bearson", "Superpoze"],
+    "other-artists": ["Gorillaz", "Lorde", "MGMT", "HAIM", "Milky Chance", "Two Door Cinema Club", "Capital Cities", "DREAMCAR", "Sean Paul", "Dua Lipa", "KYLE", "The Revivalists", "J Boog", "They", "Coin", "Sofi Tukker", "Stick Figure", "Kali Uchis", "FRENSHIP", "Jacob Banks", "Sigrid", "Shy Girls", "Ella Vos", "Day Wave", "Cameron Calloway", "The Rhyolite Sound"]
+},
+{
+    "title": "Austin City Limits Music Festival",
+    "url": "https://www.aclfestival.com/",
+    "date": "October 6–8 & 13–15",
+    "location": "Austin, TX, USA",
+    "rock-artists": ["Red Hot Chili Peppers", "The Killers", "Ryan Adams", "Spoon", "Portugal. the Man", "Royal Blood", "The Black Angels", "O.A.R.", "Eagles of Death Metal", "Mutemath", "The Growlers", "Car Seat Headrest", "Hamilton Leithauser", "Benjamin Booker", "Rainbow Kitten Surprise", "Whitney", "Andrew McMahon in the Wilderness", "The Lemon Twigs", "Middle Kids", "Mondo Cozmo", "Ought", "Lukas Nelson & Promise of the Real", "Deap Vally", "Dreamers", "Band of Heathens"],
+    "hh-artists": ["Jay-Z", "Chance the Rapper", "Ice Cube", "Run the Jewels", "A$AP Ferg", "Russ", "D.R.A.M.", "Skepta", "Danny Brown", "Sam Dew", "Pell"],
+    "electronic-artists": ["Martin Garrix", "The xx", "ZHU", "Bonobo", "Cut Copy", "Crystal Castles", "Louis the Child", "Alison Wonderland", "Getter", "BROODS", "Big Wild", "MUNA", "MISSIO"],
+    "other-artists": ["Gorillaz", "Solange", "The Head and the Heart", "Foster the People", "Vance Joy", "Glass Animals", "Tove Lo", "Milky Chance", "First Aid Kit", "Rufus du Sol", "KYLE", "The Revivalists", "Cody Jinks", "Angel Olsen", "James Vincent McMorrow", "BadBadNotGood", "Vulfpeck", "Joseph", "DREAMCAR", "Grace VanderWaal", "Brothers Osbourne", "Thundercat", "Jacob Banks", "Day Wave", "Bibi Bourelly", "Tash Sultana", "Skip Marley", "Valerie June", "Coin", "Sigrid", "AJR", "Asgeir", "Lukas Nelson & Promise of the Real", "(Sandy) Alex G", "Asleep at the Wheel", "Dale and Ray", "La Femme", "Karen Elson"]
 }]
 

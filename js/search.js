@@ -126,6 +126,7 @@ function search() {
 	else {
 		var results = idx.search(query);
 		displaySearchResults(query, results, data);
+		ga('send', 'event', 'Search', 'submit', query);
 	}
 }
 

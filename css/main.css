@@ -110,10 +110,14 @@ html,body {
 		cursor: pointer;
 	}
 
+
+.content {
+	margin: 24px 0;
+}
+
 section {
-	max-width: 850px;
-	margin: 0 auto;
-	padding: 52px;
+	width: 100%;
+	margin: 0 auto 48px;
 }
 	
 	section a {
@@ -126,18 +130,38 @@ section {
 		text-decoration: underline;
 	}
 
+	.image img {
+		max-width: 1024px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.card {
+		max-width: 960px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		position: relative;
+		top: -96px;
+		z-index: 2;
+
+		background: #FFFFFF;
+		border: 1px solid rgba(136,137,133,0.11);
+		box-shadow: 0 2px 18px 0 rgba(179,179,177,0.23);
+		padding: 56px 96px;
+	}
+
 	.title {
 		display: block;
 		font-family: 'Playfair Display';
 		font-size: 30px;
-		color: #000000;
+		color: #000;
 	}
 
 	.date, .location {
 		font-family: "Oswald";
 		text-transform: uppercase;
 		font-size: 14px;
-		color: #000000;
+		color: #000;
 		letter-spacing: 0.8px;
 		display: inline;
 		padding-right: 8px;
@@ -159,13 +183,13 @@ section {
 			.artists .heading {
 				font-family: 'Open Sans', sans-serif;
 				font-size: 14px;
-				color: #000000;
+				color: #000;
 			}
 
 			.artists ul {
 				font-family: 'Cutive Mono', 'Courier', monospace;
 				font-size: 16px;
-				color: #000000;
+				color: #000;
 				padding: 0;
 			}
 			
@@ -185,14 +209,25 @@ section {
 	.toggle {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13px;
-		color: #000000;
+		color: #000;
+		cursor: pointer;
+		display: inline;
+	}
+
+	.attribution {
+		display: none;
+		float: right;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13px;
+		color: #000;
 		cursor: pointer;
 	}
 
-	hr {
-		width: 100%;
-		border-left: 0;
-		border-right: 0;
+	.attribution:before {
+		content: url('../images/camera.png');
+		position: relative;
+		right: 6px;
+		top: 1px;
 	}
 
 
@@ -202,6 +237,19 @@ section {
 
 
 /* TODO: 2 artist lists per line, then 1 per line on mobile(?) */
+@media (max-width: 1024px) {
+	.image img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 960px) {
+	.card {
+		padding: 40px 56px;
+		width: 90%;
+	}
+}
+
 @media (max-width: 600px) { 
 	.artists {
 		width: 40%;
@@ -210,6 +258,11 @@ section {
 }
 
 @media (max-width: 450px) {
+
+	section {
+		margin: 0 auto 32px;
+	}
+
 	.artists {
 		width: 100%;
 		padding-right: 0;
@@ -217,12 +270,7 @@ section {
 	#description {
 		display: none;
 	}
-
 	#description-short {
 		display: block;
-	}
-
-	section {
-		padding: 32px;
 	}
 }

@@ -103,56 +103,62 @@
 	<div class="content">
 		{% for festival in site.data.festivals %}
 			<section>
-				<div class="title"><a href="{{festival.url}}">{{ festival.title }}</a></div>
-				<div class="date">{{ festival.date }}</div><div class="location">{{ festival.location }}</div>
-				<div class="artists-container">
-					{% if festival.rock-artists.size > 0 %}
-						<div class="artists col1">
-							<p class="heading">Rock</p>
-							<ul class="list rock-artists">
-								{% for artist in festival.rock-artists %}
-									<li>{{artist}}</li>
-								{% endfor %}
-							</ul>
-						</div>
-					{% endif %}
-					{% if festival.hh-artists.size > 0 %}
-					<div class="artists col2">
-						<p class="heading">Hip-Hop</p>
-						<ul class="list hh-artists">
-							{% for artist in festival.hh-artists %}
-								<li>{{artist}}</li>
-							{% endfor %}
-						</ul>
-					</div>
-					{% endif %}
-					{% if festival.electronic-artists.size > 0 %}
-					<div class="artists col3">
-						<p class="heading">Electronic</p>
-						<ul class="list electronic-artists">
-							{% for artist in festival.electronic-artists %}
-								<li>{{artist}}</li>
-							{% endfor %}
-						</ul>
-					</div>
-					{% endif %}
-					{% if festival.other-artists.size > 0 %}
-					<div class="artists col4">
-						<p class="heading">Everything Else</p>
-						<ul class="list other-artists">
-							{% for artist in festival.other-artists %}
-								<li>{{artist}}</li>
-							{% endfor %}
-						</ul>
-					</div>
-					{% endif %}
+				<div class="image">
+					<img src="images/{{festival.image.url}}" alt="{{festival.title}}">
 				</div>
-				<div class="toggle">+ Show More</div>
+				<div class="card">
+					<div class="title"><a target="_blank" href="{{festival.url}}">{{ festival.title }}</a></div>
+					<div class="date">{{ festival.date }}</div><div class="location">{{ festival.location }}</div>
+					<div class="artists-container">
+						<div class="section1">
+							{% if festival.rock-artists.size > 0 %}
+								<div class="artists col1">
+									<p class="heading">Rock</p>
+									<ul class="list rock-artists">
+										{% for artist in festival.rock-artists %}
+											<li>{{artist}}</li>
+										{% endfor %}
+									</ul>
+								</div>
+							{% endif %}
+							{% if festival.hh-artists.size > 0 %}
+							<div class="artists col2">
+								<p class="heading">Hip-Hop</p>
+								<ul class="list hh-artists">
+									{% for artist in festival.hh-artists %}
+										<li>{{artist}}</li>
+									{% endfor %}
+								</ul>
+							</div>
+							{% endif %}
+						</div>
+						<div class="section2">
+							{% if festival.electronic-artists.size > 0 %}
+							<div class="artists col3">
+								<p class="heading">Electronic</p>
+								<ul class="list electronic-artists">
+									{% for artist in festival.electronic-artists %}
+										<li>{{artist}}</li>
+									{% endfor %}
+								</ul>
+							</div>
+							{% endif %}
+							{% if festival.other-artists.size > 0 %}
+							<div class="artists col4">
+								<p class="heading">Everything Else</p>
+								<ul class="list other-artists">
+									{% for artist in festival.other-artists %}
+										<li>{{artist}}</li>
+									{% endfor %}
+								</ul>
+							</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="toggle">+ Show More</div>
+					<a class="attribution" target="_blank" href="{{festival.image.source}}">{{festival.image.author}}</a>
+				</div>
 			</section>
-			{% if forloop.last %}
-			{% else %}
-			    <hr>
-			{% endif %}
 		{% endfor %}
 	</div>
 

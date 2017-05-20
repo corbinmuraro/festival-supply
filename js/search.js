@@ -54,7 +54,7 @@ $(document).keyup(function(e) {
 
 // On deselect --> close
 $(".content").click(function(e) {	
-	e.preventDefault();
+	// e.preventDefault();
 	closeSearchBar();
 });
 
@@ -154,9 +154,9 @@ function displaySearchResults(query, results, data) {
 	if (results.length) {
 		for (var i = 0; i < results.length; i++) {
 			if (query == "")
-				item = data[i]; // used when showing all results
+				item = data[i]; // empty query --> show all results
 			else
-				item = data[results[i].ref]; // used when showing lunr results
+				item = data[results[i].ref]; // show query results
 
 			var rockList, hhList, electronicList, otherList;
 			rockList = "";
@@ -177,7 +177,7 @@ function displaySearchResults(query, results, data) {
 				otherList += "<li>" + artist + "</li>";
 			});
 
-			var container = '<section></section>'
+			var image = '<div class="image"><img src="images/' + item.image.url + '" alt="' + item.title + '"></div>';
 			var title = '<div class="title"><a href="' + item.url + '">' + item.title + '</a></div>';
 			var date = '<div class="date">' + item.date + '</div>';
 			var location = '<div class="location">' + item.location + '</div>';
@@ -192,15 +192,10 @@ function displaySearchResults(query, results, data) {
 			if (otherList !== "")
 				artistGroup += '<div class="artists col4"><p class="heading">Everything Else</p><ul class="list other-artists">' + otherList + '</ul></div>'
 			artistGroup += '</div><div class="toggle">+ Show More</div>';
+			artistGroup += '<a class="attribution" target="_blank" href="' + item.image.source + '">' + item.image.author + '</a>';
 
-			if (i != results.length-1) {
-				var container = '<section>' + title + date + location + artistGroup + '</section><hr>';
-				$('.content').append(container);
-			}
-			else {
-				var container = '<section>' + title + date + location + artistGroup + '</section>';
-				$('.content').append(container);
-			}
+			var container = '<section>' + image + '<div class="card">' + title + date + location + artistGroup + '</div></section>';
+			$('.content').append(container);
 		}
 	}
 

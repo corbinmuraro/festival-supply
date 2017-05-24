@@ -141,7 +141,7 @@ section {
 		margin: 0 auto;
 		box-sizing: border-box;
 		position: relative;
-		top: -96px;
+		top: -10vw;
 		z-index: 2;
 
 		background: #FFFFFF;

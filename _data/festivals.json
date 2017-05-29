@@ -1,20 +1,4 @@
 [{
-	"title": "Hangout Music Fest",
-	"url": "http://hangoutmusicfest.com",
-	"image": {
-		"url": "hangout.jpg",
-		"author": "Taylor Hill",
-		"source": "https://commons.wikimedia.org/wiki/File:Matt_and_Kim_at_Hangout_Music_Festival_2014.jpg"
-	},
-	"date": "May 19–21",
-	"location": "Gulf Shores, AL, USA",
-	"rock-artists": ["Weezer", "Band of Horses", "Young the Giant", "Franz Ferdinand", "Local Natives", "Warpaint", "The Strumbellas", "Andrew McMahon in the Wilderness", "Mutemath", "Bishop Briggs", "Rainbow Kitten Surprise", "PVRIS", "Strand of Oaks", "Mondo Cozmo", "Le Youth", "888", "The Heydaze", "SUSTO", "White Reaper", "The Worn Flints"],
-	"hh-artists": ["Chance the Rapper", "Migos", "Tory Lanez", "A$AP Ferg", "Lil Yachty", "DJ Jazzy Jeff", "Russ", "Towkio", "Pardison Fontaine", "Tkay Maidza"],
-	"electronic-artists": ["Major Lazer", "DJ Snake", "Sigur Ros", "Marshmello", "Dillon Francis", "Charli XCX", "Cash Cash", "Louis the Child", "NGHTMRE", "TCHAMI", "Snakehips", "Cherub", "Gryffin", "Lany", "Matoma", "Cheat Codes", "Kungs", "Bob Moses", "ARIZONA", "Nora En Pure", "Shaun Frank", "Brasstracks", "Elephante", "Jillionaire", "Kap Slap", "CVBZ", "MISSIO", "Foreign Air", "BASSH", "DJ Hashim"],
-	"other-artists": ["Mumford & Sons", "Twenty One Pilots", "Frank Ocean", "MGMT", "The Head and the Heart", "Lukas Graham", "Mac DeMarco", "Rufus du Sol", "Shaggy", "MAGIC!", "Lewis Del Mar", "Hurray for the Riff Raff", "Joseph", "LP", "Joshua James", "Cobi", "Barns Courtney", "Coin", "Fletcher", "Frances", "The Suffers", "Lawrence", "The New Respects", "Jimmy Lumpkin & the Revival", "NAWAS"]
-
-},
-{
 	"title": "Sasquatch! Music Festival",
 	"url": "http://sasquatchfestival.com",
 	"image": {

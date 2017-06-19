@@ -99,8 +99,7 @@ html,body {
 
 	.summary {
 		padding: 6.5px;
-		
-		margin-top: 16px;
+		margin: 16px 0;
 		display: inline-block;
 	}
 

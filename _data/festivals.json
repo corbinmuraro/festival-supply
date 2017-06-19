@@ -60,6 +60,36 @@
 	"other-artists": ["The Weeknd", "Twenty One Pilots", "Kesha", "Glass Animals", "Phantogram", "Capital Cities", "Banks", "Bleachers", "Misterwives", "Nahko and Medicine for the People", "Daya", "Stick Figure", "Sir Sly", "Lewis Del Mar", "Judah & the Lion", "K.Flay", "Maggie Rogers", "Jacob Banks", "Sofi Tukker", "Magic Giant", "Barns Courtney", "Meg Mac", "Quinn XCII", "James TW", "Handsome Ghost", "Kevin Garrett", "Secret Weapons", "Goody Grace", "NAWAS", "Dead Man Fall"]
 },
 {
+	"title": "Eaux Claires",
+	"url": "http://eauxclaires.com/",
+	"image": {
+		"url": "eauxclaires.jpg",
+		"author": "Darin Kamnetz",
+		"source": "https://www.flickr.com/photos/darin_k_/19864595021"
+	},
+	"date": "June 16–17",
+	"location": "Eau Claire, WI, USA",
+	"rock-artists": ["Wilco", "Tweedy", "The Autumn Defense", "Collections of Colonies of Bees"],
+	"hh-artists": ["Chance the Rapper", "Danny Brown", "Spank Rock"],
+	"electronic-artists": ["Mouse on Mars", "Sylvan Esso", "Francis and the Lights", "Cup"],
+	"other-artists": ["Paul Simon with YMUSIC", "Bon Iver Presents John Prine and the American Songbook", "Feist", "Perfume Genius", "Mountain Man", "Julieta Venegas", "Happy Apple", "This is the Kit", "S. Carey and Glenn Kotche", "S-T-A-R-G-A-Z-E", "Zebulon Pike", "Big Red Machine", "Quindar", "Music for the Long Emergency", "Velvet Negroni"]
+},
+{
+	"title": "Arroyo Seco Weekend",
+	"url": "https://www.arroyosecoweekend.com",
+	"image": {
+		"url": "arroyoseco.jpg",
+		"author": "Arroyo Seco Weekend",
+		"source": "https://www.arroyosecoweekend.com"
+	},
+	"date": "June 24–25",
+	"location": "Pasadena, CA, USA",
+	"rock-artists": ["Tom Petty & the Heartbreakers", "Weezer", "The Shins", "Alabama Shakes", "Dawes", "Broken Social Scene", "Live", "Lukas Nelson & Promise of the Real"],
+	"hh-artists": [],
+	"electronic-artists": [],
+	"other-artists": ["Mumford & Sons", "Andrew Bird", "The Meters", "Fitz & the Tantrums", "Charles Bradley and his Extraordinaires", "Galactic", "The Revivalists", "Andy Grammer", "Preservation Hall Jazz Band", "Jeff Goldblum & the Mildred Snitzer Orchestra", "ZZ Ward", "Lettuce", "Jamtown", "Rachel Platten", "Roy Ayers"]
+},
+{
 	"title": "FYF Fest",
 	"url": "http://fyffest.com",
 	"image": {
@@ -73,6 +103,22 @@
 	"hh-artists": ["Missy Elliott", "A Tribe Called Quest", "Run the Jewels", "Sleep", "Noname", "Joey Purp", "6lack", "Kamaiyah", "Princess Nokia", "Nadia Rose", "Kirk Knight"],
 	"electronic-artists": ["Flying Lotus", "Nicolas Jaar", "Little Dragon", "Mura Masa", "The Black Madonna", "Motor City Drum Ensemble", "John Talabot", "Arca", "DJ Harvey", "TR/ST", "Tiga", "Talaboman", "Omar-S", "Daniel Avery", "SURVIVE", "Horse Meat Disco", "Fatima Yamaha", "Helena Hauff", "Avalon Emerson", "Paranoid London", "Young Marco"],
 	"other-artists": ["Bjork", "Frank Ocean", "Erykah Badu", "Solange", "Anderson .Paak", "MGMT", "Hannibal Buress", "Angel Olsen", "Kehlani", "Majid Jordan", "Thundercat", "The Drums", "Seun Kuti & Egypt 80", "Cap'n Jazz", "BadBadNotGood", "Perfume Genius", "Moses Sumney", "Andy Shauf", "Julia Jacklin"]
+
+},
+{
+	"title": "Panorama NYC",
+	"url": "http://www.panorama.nyc",
+	"image": {
+		"url": "panorama.jpg",
+		"author": "aLIVE Coverage",
+		"source": "http://www.alivecoverage.com"
+	},
+	"date": "July 28–30",
+	"location": "New York City, NY, USA",
+	"rock-artists": ["Nine Inch Nails", "Spoon", "Andrew McMahon in the Wilderness", "Foxygen", "Cherry Glazerr", "Pinegrove", "Cloud Nothings", "Powder", "Dhani Harrison"],
+	"hh-artists": ["A Tribe Called Quest", "Tyler the Creator", "Isiah Rashad", "Vince Staples", "6lack", "Noname", "Towkio", "24hrs", "Jamila Woods"],
+	"electronic-artists": ["Tame Impala", "Future Islands", "Nick Murphy", "Nicolas Jaar", "Justice", "Cashmere Cat", "Girl Talk", "DJ Shadow", "MØ", "Breakbot", "Jagwar Ma", "Matoma", "Hot Since 82", "Snakehips", "Mura Masa", "Theo Parrish", "Omar-S", "Marcellus Pittman", "Motor City Drum Ensemble", "SURVIVE", "Derrick Carter", "Honey Dijon", "Jane Fitz", "Jay Daniel", "Huerco S.", "Anthony Naples", "Mister Saturday Night", "Jayda G", "DJ Heather", "Miles Maeda"],
+	"other-artists": ["Frank Ocean", "Solange", "Alt-J", "MGMT", "Belle and Sebastian", "Glass Animals", "Angel Olsen", "Vance Joy", "They", "Mitski", "Kiiara", "Sofi Tukker", "Preoccupations", "Honne", "Bleached", "Bishop Briggs", "Tim Sweeney"]
 
 },
 {
@@ -102,8 +148,8 @@
 	"location": "San Francisco, CA, USA",
 	"rock-artists": ["Metallica", "The Who", "Queens Of The Stone Age", "Young the Giant", "Royal Blood", "Dawes", "Warpaint", "Real Estate", "Temples", "Hamilton Leithauser", "Foxygen", "Electric Guest", "Hundred Waters", "San Fermin", "Mon Laferte", "The Lemon Twigs", "Mondo Cozmo"],
 	"hh-artists": ["A Tribe Called Quest", "Schoolboy Q", "Action Bronson", "Dr. Octagon", "Noname", "Kamaiyah", "Sam Dew"],
-	"electronic-artists": ["Gorillaz", "Above & Beyond", "Empire Of The Sun", "Little Dragon", "Kaytranada", "Louis The Child", "Bomba Estereo", "RAC", "How to Dress Well", "Sohn", "Goldroom", "SURVIVE", "Porches", "MUNA", "Oliver Tree"],
-	"other-artists": ["Lorde", "Alt-J", "Fleet Foxes", "The Avett Brothers", "Belle and Sebastian", "Solange", "Future Islands", "Rebelution", "Vance Joy", "Bleachers", "Tove Lo", "Sleigh Bells", "Shovels & Rope", "Thundercat", "Rag’n’Bone Man", "James Vincent McMorrow", "K.Flay", "Maggie Rogers", "Sofi Tukker", "Khruangbin", "Kali Uchis", "Joseph", "The Japanese House", "Lee Fields & The Expressions", "Grace Mitchell", "Jacob Banks", "John Moreland", "FRENSHIP", "Lawrence", "The She’s"]
+	"electronic-artists": ["Gorillaz", "Above & Beyond", "Empire Of The Sun", "Little Dragon", "Future Islands", "Kaytranada", "Louis The Child", "Bomba Estereo", "RAC", "How to Dress Well", "Sohn", "Goldroom", "SURVIVE", "Porches", "MUNA", "Oliver Tree"],
+	"other-artists": ["Lorde", "Alt-J", "Fleet Foxes", "The Avett Brothers", "Belle and Sebastian", "Solange", "Rebelution", "Vance Joy", "Bleachers", "Tove Lo", "Sleigh Bells", "Shovels & Rope", "Thundercat", "Rag’n’Bone Man", "James Vincent McMorrow", "K.Flay", "Maggie Rogers", "Sofi Tukker", "Khruangbin", "Kali Uchis", "Joseph", "The Japanese House", "Lee Fields & The Expressions", "Grace Mitchell", "Jacob Banks", "John Moreland", "FRENSHIP", "Lawrence", "The She’s"]
 },
 {
     "title": "Bumbershoot",
@@ -150,4 +196,3 @@
     "electronic-artists": ["Martin Garrix", "The xx", "ZHU", "Bonobo", "Cut Copy", "Crystal Castles", "Louis the Child", "Alison Wonderland", "Getter", "BROODS", "Big Wild", "MUNA", "MISSIO"],
     "other-artists": ["Gorillaz", "Solange", "The Head and the Heart", "Foster the People", "Vance Joy", "Glass Animals", "Tove Lo", "Milky Chance", "First Aid Kit", "Rufus du Sol", "KYLE", "The Revivalists", "Cody Jinks", "Angel Olsen", "James Vincent McMorrow", "BadBadNotGood", "Vulfpeck", "Joseph", "DREAMCAR", "Grace VanderWaal", "Brothers Osbourne", "Thundercat", "Jacob Banks", "Day Wave", "Bibi Bourelly", "Tash Sultana", "Skip Marley", "Valerie June", "Coin", "Sigrid", "AJR", "Asgeir", "Lukas Nelson & Promise of the Real", "(Sandy) Alex G", "Asleep at the Wheel", "Dale and Ray", "La Femme", "Karen Elson"]
 }]
-
